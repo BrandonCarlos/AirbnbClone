@@ -1,0 +1,26 @@
+// ----- Custom Color variables ----- //
+$dark: #222;
+$black: #000;
+$white: #fff;
+$border-color: #DDD;
+$secondaryBg: #222;
+$secondaryBorderColor: #B0B0B0;
+$footerBgColor: #F7F7F7;
+
+
+// ------ PrimeNG Variables ------ //
+$primaryColor: #F24B5B;
+$primaryDarkColor: #F04B5F;
+$primaryDarkerColor: #F04B5F;
+$primaryLightColor: #717171;
+
+$highLightTextColor: $primaryDarkerColor;
+$highLightFocusBg: rgba($primaryColor, .24);
+
+$borderRadius: 6px !default;
+
+$textColor: #5B5B5B;
+$fontFamily: "Airbnb Cereal", sans-serif;
+$font-size: 1rem;
+
+$dialogBorderRadius: 12px;
