@@ -9,12 +9,25 @@
                 {{location}}
             </button>     
             <div class="border-1 border-left-none border-gray-300 separator"></div>
-                <button class="p-button border-none border-noround bg-white text-dark focus:shadow-none">
+            <button class="p-button border-none border-noround bg-white text-dark focus:shadow-none">
                     {{dates}}
-                </button>
-                <div class="border-1 border-left-none border-gray-300 separator"></div>
-                <button class="p-button guest-btn border-none border-round-right-3xl bg-white text-dark focus:shadow-none text-gray-400 p-2"></button>
-                
+            </button>
+            <div class="border-1 border-left-none border-gray-300 separator"></div>
+            <button class="p-button guest-btn border-none border-round-right-3xl bg-white text-dark focus:shadow-none text-gray-400 p-2">
+                <div>{{guests}}</div>    
+            </button>
+            <button class="mr-2 p-button search-icon flex align-items-center justify-content-center">
+                <fa-icon [icon]="'search'" class="text-sm"></fa-icon>
+            </button>
         </div>
+        <div class="p-toolbar_group-end sm-hidden md-flex">
+            <a class="p-button p-button-link">Airbnb your home</a>
+            <p-menu #menu [model]="currentMenuItems" [popup]="true" styleClass="border-round-xl mt-1"></p-menu>
+            <button (click)="menu.toggle($event)" class="menu flex align-content-center justify-content-around ml-2 pl-3 p-2 border-gray-300 focus:shadow-none hover:shadow-1 border-round-3xl bg-white -button">
+                <fa-icon [icon]="'bars'" class="text-sm text-dark mr-3"></fa-icon>
+                <app-avatar [imageUrl]="" avatarSize="avatar-sm"></app-avatar>
+            </button>
+        </div>
+        <app-category></app-category>
     </p-toolbar>
 </div>
